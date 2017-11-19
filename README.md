@@ -15,15 +15,15 @@ The mathematical version of the algorithm is depicted as shown below.
 3. Make 8 sliding windows of size 7 × 4 each from the matrix “PD” as 𝑊1,𝑊2,𝑊3,,.., 𝑊8
 4. Compute the Euclidean distance of each sliding window with the matrix “CD” as ED1, ED2, ED3, . . . , ED8
 5. Select matrix 𝑊𝑖 as
-		𝑊𝑖 = Correponding Matrix (Min.(ED𝑖))
+	*	𝑊𝑖 = Correponding Matrix (Min.(ED𝑖))
 		∀𝑖 ∈ [1, 8]
-6. For 𝑘 = 1 to 𝑛
-		(i) For WC𝑘 compute the variation vector for the matrix “CD” of size 6 × 1 as “VC”.
-		(ii) ForWC𝑘 compute the variation vector for the matrix “PD” of size 6 × 1 as “VP”.
-		(iii) Mean1 =Mean (VC)
-		(iv) Mean2 =Mean (VP)
-		(v) Predicted Variation “𝑉” = (Mean1+ Mean2)/2
-		(vi) Add “𝑉” to the previous day’s weather condition in consideration to get the predicted condition.
+6. For 𝑘 = 1 to 𝑛,
+	* For WC𝑘, compute the variation vector for the matrix “CD” of size 6 × 1 as “VC”.
+	* ForWC𝑘, compute the variation vector for the matrix “PD” of size 6 × 1 as “VP”.
+	* Mean1 =Mean (VC)
+	* Mean2 =Mean (VP)
+	* Predicted Variation “𝑉” = (Mean1+ Mean2)/2
+	* Add “𝑉” to the previous day’s weather condition in consideration to get the predicted condition.
 7. End
 
 Pre requisites
@@ -37,11 +37,11 @@ To install Java
 1: Un-Install Older Version(s) of JDK/JRE
 2: Download JDK 8 from Java SE download site @ http://www.oracle.com/technetwork/java/javase/downloads/index.html
 3: Run the downloaded installer (e.g., "jdk-8u{xx}-windows-x64.exe"), which installs both the JDK and JRE.
-4:  Include JDK's "{JAVA_HOME}\bin" Directory in the PATH
+4:  Include JDK's "<JAVA_HOME>\bin" Directory in the PATH
 5: To verify installation, run java –version in the command prompt so that the version is displayed.
 ```
 
->**To install Maven:**
+To install Maven:
 ```javascript
 1: Make sure JDK is installed, and “JAVA_HOME” variable is added as Windows environment variable.
 2: Download Maven zip file from Maven official website(http://maven.apache.org/download.cgi). 
@@ -68,7 +68,7 @@ mvn clean install
 ```
 Step 3 : Run the application. By now you will get a jar generated in the target folder. To run the jar execute the below command:
 ```javascript
-Format : java -jar {jar-name.jar} {LOCATION_NAME} {OUTPUT_PATH}
+Format : java -jar <jar-name.jar> <LOCATION_NAME> <OUTPUT_PATH>
  e.g.,  java -jar target/weatherprediction-0.0.1-SNAPSHOT-jar-with-dependencies.jar /output/
 ``` 
 
