@@ -28,21 +28,20 @@ The mathematical version of the algorithm is depicted as shown below.
 
 Pre requisites
 --------------------
-•	JDK 1.8 (JAVA_HOME and PATH set) for compile and execution.
-•	Apache Maven 3.3 or higher (MVN_HOME and PATH set) for build.
-
+- JDK 1.8 (JAVA_HOME and PATH set) for compile and execution.	
+- Apache Maven 3.3 or higher (MVN_HOME and PATH set) for build.
 
 To install Java
-```javascript
+```
 1: Un-Install Older Version(s) of JDK/JRE
 2: Download JDK 8 from Java SE download site @ http://www.oracle.com/technetwork/java/javase/downloads/index.html
 3: Run the downloaded installer (e.g., "jdk-8u{xx}-windows-x64.exe"), which installs both the JDK and JRE.
-4:  Include JDK's "<JAVA_HOME>\bin" Directory in the PATH
+4: Include JDK's "<JAVA_HOME>\bin" Directory in the PATH
 5: To verify installation, run java –version in the command prompt so that the version is displayed.
 ```
 
 To install Maven:
-```javascript
+```
 1: Make sure JDK is installed, and “JAVA_HOME” variable is added as Windows environment variable.
 2: Download Maven zip file from Maven official website(http://maven.apache.org/download.cgi). 
 3: Unzip it to the folder you want to install Maven. Add both M2_HOME  variables in the Windows environment, and point it to your Maven folder.
@@ -58,33 +57,32 @@ Application Overview
 Running Application
 -------------------------------
 <b>Step 1</b> : Clone the repository.
-```javascript
+```
 < git clone https://github.com/irenemathew/weather-prediction >
 ```
 Step 2 : Build the project.
 Navigate to the root directory of the project and build the project using the below command:
-```javascript
+```
 mvn clean install
 ```
 Step 3 : Run the application. By now you will get a jar generated in the target folder. To run the jar execute the below command:
-```javascript
+```
 Format : java -jar <jar-name.jar> <LOCATION_NAME> <OUTPUT_PATH>
  e.g.,  java -jar target/weatherprediction-0.0.1-SNAPSHOT-jar-with-dependencies.jar /output/
 ``` 
 
 Sample Output
 ----------------------
-
-CANBERRA|-35.28|149.13|57.5|2017-11-20T09:00:00Z|18.74|48.25|1022.78|MOSTLY SUNNY
-CANBERRA|-35.28|149.13|57.5|2017-11-20T15:00:00Z|22.93|43.08|1021.58|MOSTLY SUNNY
-CANBERRA|-35.28|149.13|57.5|2017-11-21T09:00:00Z|19.89|45.27|1022.4|MOSTLY SUNNY
-CANBERRA|-35.28|149.13|57.5|2017-11-21T15:00:00Z|23.32|43.17|1021.38|SUNNY
-CANBERRA|-35.28|149.13|57.5|2017-11-22T09:00:00Z|20.87|44.96|1022.93|MOSTLY SUNNY
-CANBERRA|-35.28|149.13|57.5|2017-11-22T15:00:00Z|23.91|43.1|1022.13|SUNNY
-CANBERRA|-35.28|149.13|57.5|2017-11-23T09:00:00Z|21.82|41.79|1023.26|MOSTLY SUNNY
-CANBERRA|-35.28|149.13|57.5|2017-11-23T15:00:00Z|24.91|40.44|1022.26|SUNNY
-CANBERRA|-35.28|149.13|57.5|2017-11-24T09:00:00Z|22.16|38.36|1023.93|MOSTLY SUNNY
-CANBERRA|-35.28|149.13|57.5|2017-11-24T15:00:00Z|26.32|32.56|1022.9|SUNNY
+    CANBERRA|-35.28|149.13|57.5|2017-11-20T09:00:00Z|18.74|48.25|1022.78|MOSTLY SUNNY    
+    CANBERRA|-35.28|149.13|57.5|2017-11-20T15:00:00Z|22.93|43.08|1021.58|MOSTLY SUNNY 
+    CANBERRA|-35.28|149.13|57.5|2017-11-21T09:00:00Z|19.89|45.27|1022.4|MOSTLY SUNNY   
+    CANBERRA|-35.28|149.13|57.5|2017-11-21T15:00:00Z|23.32|43.17|1021.38|SUNNY
+    CANBERRA|-35.28|149.13|57.5|2017-11-22T09:00:00Z|20.87|44.96|1022.93|MOSTLY SUNNY
+    CANBERRA|-35.28|149.13|57.5|2017-11-22T15:00:00Z|23.91|43.1|1022.13|SUNNY
+    CANBERRA|-35.28|149.13|57.5|2017-11-23T09:00:00Z|21.82|41.79|1023.26|MOSTLY SUNNY
+    CANBERRA|-35.28|149.13|57.5|2017-11-23T15:00:00Z|24.91|40.44|1022.26|SUNNY
+    CANBERRA|-35.28|149.13|57.5|2017-11-24T09:00:00Z|22.16|38.36|1023.93|MOSTLY SUNNY
+    CANBERRA|-35.28|149.13|57.5|2017-11-24T15:00:00Z|26.32|32.56|1022.9|SUNNY
  
 
 Reference
